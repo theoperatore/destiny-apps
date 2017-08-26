@@ -1,0 +1,14 @@
+{
+  "name": "destiny-soul",
+  "version": "1.0.0",
+  "description": "Service that generates a short paragraph characterizing how you play destiny",
+  "main": "index.js",
+  "author": "theoperatore <theoperatore@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "destiny-client": "0.1.0"
+  }
+}

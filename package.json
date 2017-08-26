@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "destiny-apps",
+  "version": "0.1.0",
+  "description": "Many packages revolving around destiny's api",
+  "author": "theoperatore <theoperatore@gmail.com>",
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT"
+}

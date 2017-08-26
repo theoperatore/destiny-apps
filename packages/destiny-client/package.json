@@ -1,0 +1,8 @@
+{
+  "name": "destiny-client",
+  "version": "0.1.0",
+  "description": "A client for Bungie's Destiny 2 API.",
+  "main": "src/index.js",
+  "author": "Al Petersen <theoperator@gmail.com>",
+  "license": "MIT"
+}

@@ -4,5 +4,9 @@
   "description": "A client for Bungie's Destiny 2 API.",
   "main": "src/index.js",
   "author": "Al Petersen <theoperator@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^3.0.1",
+    "request": "^2.81.0"
+  }
 }

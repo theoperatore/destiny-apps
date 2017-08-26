@@ -14,7 +14,9 @@ module.exports = function createClient(apiKey) {
     searchDestinyPlayer({ displayName, membershipType }) {
       return new Promise((resolve, reject) => {
         const req = {
-          'X-API-Key': apiKey,
+          headers: {
+            'X-API-Key': apiKey,
+          },
           url: `${base}/Destiny2/SearchDestinyPlayer/${membershipType}/${displayName}/`,
         };
 
@@ -22,7 +24,7 @@ module.exports = function createClient(apiKey) {
           if (error) return reject(error);
           if (!response) return reject(new Error("Response not received"));
 
-          return resolve(body);
+          return resolve(JSON.parse(body));
         });
       });
     },
@@ -31,7 +33,9 @@ module.exports = function createClient(apiKey) {
     getProfile({ membershipType, destinyMembershipId, components = [] }) {
       return new Promise((resolve, reject) => {
         const req = {
-          'X-API-Key': apiKey,
+          headers: {
+            'X-API-Key': apiKey,
+          },
           url: `${base}/Destiny2/${membershipType}/Profile/${destinyMembershipId}/?components=${components.join()}`,
         };
 
@@ -39,8 +43,9 @@ module.exports = function createClient(apiKey) {
           if (error) return reject(error);
           if (!response) return reject(new Error("Response not received"));
 
-          return resolve(body);
+          return resolve(JSON.parse(body));
         });
+      });
     },
   };
 }

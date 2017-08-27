@@ -9,6 +9,12 @@
     "dev": "node index.js"
   },
   "dependencies": {
-    "destiny-client": "0.1.0"
+    "alorg-destiny-client": "0.1.0",
+    "body-parser": "^1.17.2",
+    "compress": "^0.99.0",
+    "cors": "^2.8.4",
+    "debug": "^3.0.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4"
   }
 }

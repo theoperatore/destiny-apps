@@ -1,17 +1,17 @@
 {
-  "name": "destiny-soul",
+  "name": "destiny-characterizer",
   "version": "1.0.0",
   "description": "Service that generates a short paragraph characterizing how you play destiny",
   "main": "index.js",
   "author": "theoperatore <theoperatore@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "DEBUG=destiny-soul node index.js"
   },
   "dependencies": {
     "alorg-destiny-client": "0.1.0",
     "body-parser": "^1.17.2",
-    "compress": "^0.99.0",
+    "compression": "^1.7.0",
     "cors": "^2.8.4",
     "debug": "^3.0.1",
     "dotenv": "^4.0.0",

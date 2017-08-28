@@ -6,7 +6,7 @@
   "author": "Al Petersen <theoperator@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "debug": "^3.0.1",
-    "request": "^2.81.0"
+    "es6-promise": "^4.1.1",
+    "isomorphic-fetch": "^2.2.1"
   }
 }

@@ -3,7 +3,7 @@
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-const base = 'https://bungie.net/Platform';
+const base = 'https://www.bungie.net/Platform';
 
 module.exports = function createClient(apiKey) {
   if (!apiKey || typeof apiKey !== 'string') throw new Error("String apiKey required for all destiny endpoints!");

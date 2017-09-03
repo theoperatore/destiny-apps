@@ -17,9 +17,8 @@ module.exports = function createClient(apiKey) {
           headers: new Headers({
             'X-API-Key': apiKey,
           }),
-          credentials: 'include',
         }
-      ),
+      ).then(response => response.json()),
 
     // get a user's profile with component support
     getProfile: ({ membershipType, destinyMembershipId, components = [] }) =>
@@ -30,6 +29,16 @@ module.exports = function createClient(apiKey) {
             'X-API-Key': apiKey,
           }),
         }
-      ),
+      ).then(response => response.json()),
+
+    getActivityHistory: ({ membershipType, destinyMembershipId, characterId }) =>
+      fetch(
+        `/Destiny2/${membershipType}/Account/${destinyMembershipId}/Character/${characterId}/Stats/Activities/`,
+        {
+          headers: new Headers({
+            'X-API-Key': apiKey,
+          }),
+        }
+      ).then(response => response.json()),
   };
 }

@@ -1,0 +1,29 @@
+.App {
+  padding: 12px;
+}
+
+.App_header {
+  margin-bottom: 24px;
+}
+
+.App_header--title {
+  padding-bottom: 0.5rem;
+}
+
+.App_header--desc {
+  padding-bottom: 1rem;
+}
+
+.App_timeline {
+  display: flex;
+}
+
+.App_timeline--line {
+  margin: 1rem 0;
+  width: 1px;
+  background-color: #CECECE;
+}
+
+.App_timeline--periods {
+  flex-grow: 1;
+}

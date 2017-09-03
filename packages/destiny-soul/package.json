@@ -1,5 +1,5 @@
 {
-  "name": "destiny-characterizer",
+  "name": "destiny-soul",
   "version": "1.0.0",
   "description": "Service that generates a short paragraph characterizing how you play destiny",
   "main": "index.js",

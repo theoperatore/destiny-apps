@@ -1,0 +1,27 @@
+{
+  "name": "destiny-legend",
+  "version": "1.0.0",
+  "author": "Alex Petersen <theoperatore@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:api": "node api/index.js",
+    "format": "prettier --single-quote --trailing-comma es5 --write \"src/**/*.js\"",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "alorg-destiny-client": "0.1.0",
+    "body-parser": "^1.18.0",
+    "compression": "^1.7.0",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "helmet": "^3.8.1",
+    "react-scripts": "^1.0.13"
+  },
+  "devDependencies": {
+    "prettier": "^1.6.1"
+  }
+}
